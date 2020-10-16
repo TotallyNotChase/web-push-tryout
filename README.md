@@ -58,7 +58,7 @@ The backend uses [web-push](https://www.npmjs.com/package/web-push) to handle th
     </td>
     <td>
 
-    The port to assign the webserver on
+    The port to assign the webserver on (should be a number - not string)
 
     </td>
   </tr>
@@ -84,7 +84,7 @@ The backend uses [web-push](https://www.npmjs.com/package/web-push) to handle th
 
     Postgre DB connection object
 
-    `host` is usually `localhost` and `port` is `5432` for a default configured postgre server running locally
+    `host` is usually `"localhost"` and `port` is `5432` (should be a number - not string) for a default configured postgre server running locally
 
     `database` should be a **newly created** database on the server
 
