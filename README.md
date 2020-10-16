@@ -8,7 +8,7 @@ Built with Typescript + Express + Pg-Promise (Postgresql) + EJS
 The backend uses [web-push](https://www.npmjs.com/package/web-push) to handle the web push setup and notifications
 
 # Usage
-* Clone the repo
+* Clone the repo using `git clone https://github.com/TotallyNotChase/web-push-tryout.git`
 * `cd` into `web-push-tryout`
 * Execute `npm i` to set up the packages
 * Execute `./node_modules/.bin/web-push generate-vapid-keys` and save the output for later use
