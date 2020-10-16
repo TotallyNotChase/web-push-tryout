@@ -10,6 +10,7 @@ Thumbs.db
 
 # Ignore built ts files
 dist/
+js/
 
 # ignore user specific config
 userconfig.json
