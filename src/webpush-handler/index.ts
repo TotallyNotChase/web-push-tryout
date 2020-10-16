@@ -14,5 +14,5 @@ export const setUpVAPID = () =>
  */
 export const sendPushNotif = async (subscription: PushSubscription, notif: string) => {
     const result: SendResult = await webpush.sendNotification(subscription, notif);
-    console.log(`Push was successful, result: ${result}`);
+    console.log(`Push was successful, result: ${JSON.stringify(result)}`);
 };
