@@ -1,0 +1,19 @@
+# Ignore .vscode
+.vscode
+
+# Dependency directory
+node_modules
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Ignore built ts files
+dist/
+
+# ignore user specific config
+userconfig.json
+testconfig.json
+
+# Ignore in house utility script
+sqltypes-gen.py
