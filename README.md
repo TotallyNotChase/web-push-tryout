@@ -9,16 +9,16 @@ The backend uses [web-push](https://www.npmjs.com/package/web-push) to handle th
 
 # Usage
 * Clone the repo
-* `cd` into the directory
+* `cd` into `web-push-tryout`
 * Execute `npm i` to set up the packages
 * Execute `./node_modules/.bin/web-push generate-vapid-keys` and save the output for later use
-* Set up the user configurations, create a `userconfig.json` in the same directory as `tsconfig.json`
+* Set up the user configurations, create a file named `userconfig.json` inside `web-push-tryout`
 
   The format of the JSON should be-
   ```json
   {
-    "NAME": <app name>,
-    "PORT": <port to assign the server on>,
+    "NAME": <app_name>,
+    "PORT": <port_to_assign_the_server_on>,
     "ENV": "development"/"production",
     "DB_CONNECTION": {
       "host": <postgres_host>,
@@ -27,9 +27,9 @@ The backend uses [web-push](https://www.npmjs.com/package/web-push) to handle th
       "user": <postgres_username>,
       "password": <postgres_userpass>
     },
-    "PUBLIC_VAPID_KEY": <Public VAPID key generated from web-push>,
-    "PRIVATE_VAPID_KEY": <Private VAPID key generated from web-push>,,
-    "WEB_PUSH_CONTACT": <mailto link to an email to be associated with web push>
+    "PUBLIC_VAPID_KEY": <Public_VAPID_key_generated_from_web-push>,
+    "PRIVATE_VAPID_KEY": <Private_VAPID_key_generated_from_web-push>,,
+    "WEB_PUSH_CONTACT": <mailto_link_to_an_email_to_be_associated_with_web_push>
   }
   ```
 
@@ -86,7 +86,7 @@ The backend uses [web-push](https://www.npmjs.com/package/web-push) to handle th
 
     `host` is usually `localhost` and `port` is `5432` for a default configured postgre server running locally
 
-    `database` should be a newly created database on the server
+    `database` should be a **newly created** database on the server
 
     `user` and `password` are the credentials for the postgre user
 
