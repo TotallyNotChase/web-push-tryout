@@ -7,7 +7,7 @@
         "url": ""
     },
     "author": "TotallyNotChase",
-    "license": "",
+    "license": "MIT",
     "scripts": {
         "clean": "rimraf ./dist/*",
         "serve": "node ./dist/server.js",
