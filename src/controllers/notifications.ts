@@ -9,7 +9,7 @@ import { sendPushNotif } from '../webpush-handler';
  * Save user subscription
  * @route PUT /subscriptions
  */
-export const subscribe = (req: Request, res: Response) => {
+export function subscribe(req: Request, res: Response) {
     // The req.body is a stringified version of the Subscription object, save that to db
     db.subscriptions
         .add({ subscription: req.body })
@@ -24,7 +24,7 @@ export const subscribe = (req: Request, res: Response) => {
  * Delete user subscription
  * @route DELETE /subscriptions
  */
-export const unsubscribe = (req: Request, res: Response) => {
+export function unsubscribe(req: Request, res: Response) {
     // Delete the entry in the db containing the correct stringified Subscription object
     db.subscriptions
         .deleteBySubscription(req.body)
@@ -39,7 +39,7 @@ export const unsubscribe = (req: Request, res: Response) => {
  * Send a push notification for the client side to handle
  * @route GET /notification
  */
-export const send = async (req: Request, res: Response) => {
+export async function send(req: Request, res: Response) {
     // The subscription object is base64ed into the GET parameter - construct a JSON from it
     const subscription: PushSubscription = JSON.parse(Buffer.from(req.query.sub as string, 'base64').toString());
     try {

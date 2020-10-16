@@ -13,7 +13,7 @@ import { ExtendedProtocol } from '../types/db';
 /**
  * Function to create all necessary tables
  */
-const init = async () => {
+async function init() {
     // Create the table(s) for subscriptions
     const subscriptionsRepo = new SubscriptionRepo(db, pgp);
     await subscriptionsRepo.create();
