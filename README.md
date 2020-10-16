@@ -242,9 +242,9 @@ All the backend code related stuff is in `src/`, static assets for the frontend 
 </table>
 
 ## Frontend files
-The only files that need to be discussed about are the `index.js` and `sw.js` files that handle all the push notifications on the frontend side
+The only files that need to be discussed about are the `index.ts` and `sw.ts` files that handle all the push notifications on the frontend side
 
-### index.js
+### index.ts
 Makes sure the browser supports push notifications
 
 Initiallized the UI, based on initial state of subscription
@@ -253,5 +253,5 @@ Sets up handlers for the subscribe and push buttons
 
 This is more or less a modified version of the codelabs `main.js`, except it adds support for communicating with the backend through `updateSubscriptionOnServer`, `deleteSubscriptionOnServer`, `initiatePushOnServer`. It also adds support for unsubscription on both the frontend and backend, as well as sending the notification itself through the backend.
 
-### sw.js
+### sw.ts
 Service worker file that sets up event listener for the push notification to be sent
