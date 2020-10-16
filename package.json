@@ -11,7 +11,7 @@
     "scripts": {
         "clean": "rimraf ./dist/* && rimraf ./assets/public/js/*",
         "serve": "node ./dist/server.js",
-        "build": "npm run clean && tsc && node ./copyRes.js && cd ./assets/public && tsc",
+        "build": "npm run clean && tsc && cd ./assets/public && tsc && cd ../../ && node ./copyRes.js ",
         "dev": "npm run build && npm run serve",
         "test": "mocha ./dist/test",
         "devtest": "npm run build && npm run test"

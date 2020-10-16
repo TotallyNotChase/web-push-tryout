@@ -9,3 +9,6 @@ const shell = require('shelljs');
 shell.cp('-R', 'src/database/sql', 'dist/database');
 // But remove the typescript file
 shell.rm('dist/database/sql/index.ts');
+
+// Also remove the `export` hack from `js/sw.js`
+shell.sed('-i', /export default null;/, '', 'assets/public/js/sw.js');
