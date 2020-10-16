@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "module": "CommonJS",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "lib": ["ES2019", "DOM", "WebWorker"],
+        "target": "ES2019",
+        "skipLibCheck": true,
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "outDir": "js",
+    },
+    "include": [
+        "ts/*",
+    ]
+}

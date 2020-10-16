@@ -9,9 +9,9 @@
     "author": "TotallyNotChase",
     "license": "MIT",
     "scripts": {
-        "clean": "rimraf ./dist/*",
+        "clean": "rimraf ./dist/* && rimraf ./assets/public/js/*",
         "serve": "node ./dist/server.js",
-        "build": "npm run clean && tsc && node ./copyRes.js",
+        "build": "npm run clean && tsc && node ./copyRes.js && cd ./assets/public && tsc",
         "dev": "npm run build && npm run serve",
         "test": "mocha ./dist/test",
         "devtest": "npm run build && npm run test"
