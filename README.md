@@ -168,18 +168,6 @@ All the backend code related stuff is in `src/`, static assets for the frontend 
   <td>
   
   Component that manages low level SQL queries using pg-promise and exposes a high level, ORM-like API to be used by the app
-  
-  </td>
-</tr>
-<tr>
-  <td>
-  
-  `database/`
-  
-  </td>
-  <td>
-  
-  Component that manages low level SQL queries using pg-promise and exposes a high level, ORM-like API to be used by the app
 
   `database/models/` - Types that describe the model of the tables
 
